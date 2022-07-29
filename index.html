@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+        <p id="show"></p>
+        <script>
+            var time = 30
+            var result = document.getElementById("show")
+            setInterval(function(){
+                if(time <= 0){
+                    clearInterval
+                    alert("finished")
+                } else{
+                result.innerHTML = time = time -1
+                }
+            } , 1000) 
+        </script>
+    </body>
+</html>
